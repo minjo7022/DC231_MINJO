@@ -4,27 +4,17 @@ body {
 }
 
 .topNav {
-    background-color: gray;
+    background-color: grey;
     /* 나중에 지울것 */
     min-height: ; 10px;
-    color:white;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 8px 16px;
+    padding: 8px 16px;
 }
 
-.topNav a {
-color: white;
-text-decoration: none;
+.topNav__button {
+    color: white;
 }
 
 .topNav__logo {
     /* width: 200px; */
-    height: 36px;
-}
-
-.topNav__buttons {
-    display: flex;
-    gap: 16px
+    height: 24px;
 }

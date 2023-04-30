@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+}
+
+.section {
+  background-color: red;
+}
+.container {
+  background-color: green;
+  max-width: 1200px;
+  /* margin: 0 auto; 마진 상하0 좌우auto: 중앙배치로 좌우 여백 균등
+  불필요한 상하 마진값 0을 넣어 문제 발생할 수 있음*/
+  /* margin-left: auto; 두번씩 쓰기 번거로움
+  margin-right: auto; */
+  margin-inline: auto;
+  /* padding: 0 24px; 패딩 상하0 좌우24 
+  불필요한 상하 패딩값 0을 넣어 문제 발생할 수 있음 */
+  /* padding-left: 24px;
+  padding-right: 24px; 두번씩 쓰기 번거로움 */
+  padding-inline: 24px;
+}
+.wrapper {
+  background-color: blue;
+  /* padding: 64px 0; */
+  /* padding-top: 64px;
+  padding-botton: 64px; */
+  padding-block: 64px;
+}

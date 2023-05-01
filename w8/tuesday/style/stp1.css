@@ -12,60 +12,56 @@
   /* background-color: red; */
 }
 
-.container {
-  /* background-color: green; */
-  max-width: 1328px;
-  padding-inline: 64px;
-}
-
 .wrapper {
   /* background-color: blue; */
-  padding-block: 64px;
 }
 
-.button {
-  margin-inline: auto;
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: cornflowerblue;
-  padding: 8px 16px;
-  border-radius: 8px;
-  color: white;
-  font-weight: 700;
-  text-align: left;
-}
-.button--type-text {
-  background-color: unset;
-  color: cornflowerblue;
-  padding-inline: 0;
+.top__nav {
+  padding-top: 12px;
+  padding-bottom: 8px;
+  padding-inline: 20px;
+  text-align: center;
+  display: flex;
+  background-color: #252525;
+  color: #fffef2;
+  font-size: 16px;
+  font-weight: 1.6rem;
+  font-family: Suisse Regular, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
-.nav {
-  background-color: black;
-  color: white;
-  font-weight: 700;
+.nav__menuWrapper {
+  background-color: #fffef2;
+  color: #333;
+  font-weight: 1.6rem;
+  font-family: Suisse Regular, sans-serif;
+  -webkit-font-smoothing: antialiased;
   container-type: inline-size;
   container-name: nav;
 }
-.nav .wrapper {
+.nav__menuWrapper .wrapper {
   display: flex;
   justify-content: space-between;
   align-items: first baseline;
-  padding-block: 12px;
+  padding-inline: 40px;
+  padding-bottom: 16px;
 }
-.nav__menuWrapper {
+.nav__menuWrapper__menuWrapper {
   display: flex;
   gap: 24px;
   align-items: first baseline;
 }
-.nav .lt680px {
+.nav__menuWrapper .lt680px {
   display: none;
 }
 @container nav (width < 42.5rem) {
-  .nav__menuWrapper {
+  .nav__menuWrapper__menuWrapper {
     display: none;
   }
-  .nav .lt680px {
+  .nav__menuWrapper .lt680px {
     display: unset;
   }
 }
@@ -93,10 +89,13 @@
 #hero1 {
   text-align: center;
 }
+#hero1 .button {
+  margin-inline: auto;
+}
 #hero1 .main__text {
+  margin-inline: auto;
   max-width: 600px;
   margin-bottom: 24px;
-  margin-inline: auto;
 }
 #hero1 .main__media {
   aspect-ratio: 16/9;

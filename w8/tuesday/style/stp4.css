@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  /* color: white; */
+}
+
+.section {
+  /* background-color: red; */
+}
+
+.container {
+  /* background-color: green; */
+  max-width: 1856px;
+  margin-inline: auto;
+  padding-inline: 64px;
+}
+
+.wrapper {
+  /* background-color: blue; */
+  padding-block: 64px;
+}
+
+.nav {
+  background-color: #333;
+  color: #fffef2;
+  padding: 4px;
+  font-family: "Suisse regular", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  font-weight: normal;
+}
+.nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 12px;
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+  padding-inline: 40px;
+}
+.nav__menuWrapper {
+  display: flex;
+  gap: 24px;
+  align-items: first baseline;
+}

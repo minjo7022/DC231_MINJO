@@ -12,72 +12,48 @@
   /* background-color: red; */
 }
 .container {
-  // background-color: green;
+  /* background-color: green; */
   $padding-iline-value: 64px;
-  max-width: 1200px + 2 * $padding-iline-value;
+  max-width: 1728px + 2 * $padding-iline-value;
   margin-inline: auto;
-  padding-top: 12px;
-  padding-bottom: 8px;
-  padding-inline: 1.25rem;
+  padding-inline: $padding-iline-value;
 }
 
 .wrapper {
   /* background-color: blue; */
-  padding-block: 12px;
+  padding-block: 24px 48px;
 }
 
 .button {
   width: fit-content;
-  background-color: rgb(255, 255, 255);
-  padding: 8px 16px;
-  border-radius: 8px;
-  color: #333;
+  background-color: cornflowerblue;
+  padding: 14px 24px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(85, 81, 255);
   font-weight: 700;
+  font-size: 18px;
   text-align: center;
   &--type-text {
-    background-color: unset;
-    color: cornflowerblue;
-    padding-inline: 0;
+    font-style: normal;
+    font
   }
 }
 
-.top__nav {
-  background-color: #252525;
-  color: #fffef2;
-  font-size: 16px;
-  font-weight: 1.6rem;
-  font-family: Suisse Regular, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  padding-top: 12px;
-  padding-bottom: 8px;
-  padding-inline: 20px;
-  text-align: center;
-  .wrapper {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  justify-content: space-between;
-  align-items: first baseline;
-}
-&__plus {
-  gap: 24px;
-  align-items: first baseline;
-}
-.nav__menuWrapper {
-  background-color: #fffef2;
-  color: #333;
-  font-weight: 1.6rem;
-  font-family: Suisse Regular, sans-serif;
-  -webkit-font-smoothing: antialiased;
+.nav {
+  width: 1338px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0)
+  font-weight: 700;
+  font-family: Whyte, sans-serif;
   container-type: inline-size;
   container-name: nav;
   .wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: first baseline;
-    padding-inline: 40px;
-    padding-bottom: 16px;
+    align-items: center;
+    padding-block: 24px;
+    padding-inline: 48px;
   }
   &__menuWrapper {
     display: flex;

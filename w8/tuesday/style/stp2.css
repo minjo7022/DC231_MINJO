@@ -31,7 +31,7 @@
   background-color: #333;
   padding: 25px 220px 20px 20px;
   margin-top: 32px;
-  border-radius: 5px;
+  border-radius: 0px;
   color: #fffef2;
   font-weight: 700;
 }
@@ -121,12 +121,14 @@
 #hero1 .main__aesop img {
   height: 40px;
   display: flex;
+  position: absolute;
 }
 #hero1 .main__text {
   margin-inline: 220px;
   margin-bottom: 40px;
   max-width: 600px;
   margin-bottom: 24px;
+  line-height: 27.2px;
 }
 #hero1 .main__media {
   aspect-ratio: 16/9;
@@ -204,7 +206,6 @@
     margin-inline: auto;
     flex-direction: column;
     align-items: center;
-    gap: 0;
   }
 }
 
@@ -225,6 +226,7 @@
 #hero3 .main__text__buttonWrapper {
   display: flex;
   gap: 16px;
+  margin-bottom: 16px;
 }
 #hero3 .main__media {
   aspect-ratio: 16/9;
@@ -258,10 +260,11 @@
   #hero3 .wrapper p {
     margin-inline: auto;
   }
-  #hero3 .main__text {
+  #hero3 .main__media__text {
+    line-height: 27.2px;
     margin-bottom: 2.25rem;
   }
-  #hero3 .main__text__buttonWrapper {
+  #hero3 .main__media__text__buttonWrapper {
     margin-inline: auto;
     flex-direction: column;
     align-items: center;
